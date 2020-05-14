@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Google Maps</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <h3>Google Maps Location Finder</h3>
+      <div class="input-container">
+        <form id="form">
+          <div class="input-group">
+            <label for="address" id="label-text">Find Your Location</label>
+            <input
+              type="text"
+              id="address"
+              class="address"
+              placeholder="Address..."
+            />
+          </div>
+          <input type="submit" value="Submit" />
+          <a class="arrow-icon" id="arrow">
+            <span class="left-bar"></span>
+            <span class="right-bar"></span>
+          </a>
+        </form>
+      </div>
+    </div>
+    <div id="map"></div>
+
+    <script src="app.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXC0f3lJjy1VTTx6mrm9_XMjPzhXOW0sQ&callback=initMap"
+    ></script>
+  </body>
+</html>
