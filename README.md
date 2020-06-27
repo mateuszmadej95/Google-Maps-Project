@@ -1,0 +1,1 @@
+It is a small project that I prepared for a job interview. I used Google API key to utilize Google Maps functionality. We also have a dropdown menu, where we can store our location in the local storage.
